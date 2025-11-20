@@ -7,8 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.22" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+<!-- Instaling packages with "dotnet add package", source nuget.org-->
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" /> <!-- Password hashing package-->
+    <PackageReference Include="FFMpegCore" Version="5.4.0" /> <!-- Video processing package-->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" /> <!-- Authentication token -->
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" /> <!--Entity framework core for database-->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0"> 
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.15.0" /> <!-- Json web tokens package, but also comes with JwtBearer dependencies-->
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" /> <!-- database postgresql-->
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.0.0" /> 
   </ItemGroup>
 
 </Project>
